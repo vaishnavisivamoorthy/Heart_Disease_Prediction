@@ -1,6 +1,7 @@
 This project is about prediction of heart disease with help of csv file which is heart.csv.
 The heart.csv contains 14 columns. They are age,sex, cp,trestbps,chol, fbs ,restecg , thalach, exang, oldpeak,slope,ca,thal and target. With help of these column we use to predict whether the person is affected with heart disease or not.
-Heart.csv
+
+Heart.csv:
 Lets see detail information about each column:
 *age: represent the age of person in Numeric (e.g., 52)
 *sex: represent either the person is male or female in Categorical (0: Female, 1: Male)
@@ -25,4 +26,5 @@ This part is used to deploy the random forest with help of pickle. This random f
 
 App.py:
 This file is used to create frontend with help of flask framework where we call random_forest_models.pkl file for prediction. It uses only first 13 columns are used where the target variable is not considered. Therefore target variable is used in final output. Once we the code it will generate an url. Copy the url and paste it in a POSTMAN by POST method. Then Click on send button in POSTMAN it will generate an output as Prediction with Probability. Here the prediction will be detected from target variable as 0 or 1 where if output shows 0 then person has no heart disease or if it shows 1 then the person has heart disease. The probability displays probabilty value of prediction.
+
 The tools used are Google colab or jupyter notebook, VScode and Postman.
